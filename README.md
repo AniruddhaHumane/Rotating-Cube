@@ -5,6 +5,8 @@ While rotatiing if you hold the mouse button down on the screen it generates fri
 
 The implementation highly uses computer graphics concepts.
 
+##### Note: if markdown is not rendered properly here then copy this markdown file and paste it on https://stackedit.io/app# and click reader Mode at the centre.
+
 ## How the cube is implemented
 check out following image
 
