@@ -5,6 +5,7 @@ While rotatiing if you hold the mouse button down on the screen it generates fri
 
 The implementation highly uses computer graphics concepts.
 
+
 ##### Note: if markdown is not rendered properly here then copy this markdown file and paste it on https://stackedit.io/app# and click reader Mode at the centre.
 
 ## How the cube is implemented
@@ -37,25 +38,36 @@ to understand how these matrices are actually calculated, Assume a smaller entit
 Length of the line is $r$. 
 Now using trigonometry, we can calcualte the projection of the point onto each axis. We have,
 #### Projection of point $(x,y)$
+
 $x = rcos(\phi)$
+
 $y = rsin(\phi)$
+
 <div style="text-align: right"> --- (1) </div>
 
 #### Projection of point $(x',y')$
+
 $x' = rcos(\phi + \theta)$
+
 $y' = rsin(\phi + \theta)$
+
 <div style="text-align: right"> --- (2) </div>
 
 We know that,
 $cos(A+B) = cos(A)cos(B)-sin(A)sin(B)$
+
 $sin(A+B) = sin(A)cos(B)+cos(A)sin(B)$
 
 Expanding formulae (2)
+
 $rcos(\phi + \theta) = rcos(\phi)cos(\theta)-rsin(\phi)sin(\theta)$
+
 $rsin(\phi + \theta) = rsin(\phi)cos(\theta)+rcos(\phi)sin(\theta)$
 
 using formulae (1) and (2)
+
 $x' = xcos(\theta)-ysin(\theta)$
+
 $y' = xsin(\theta)+ycos(\theta)$
 
 
@@ -88,6 +100,6 @@ just add the event listener `mousedown` and increase the `drag` value by small a
 
 All the calculated values of $drag, initialAngles, multiplierToDragDistance$  are calculated based on trial and error.
 
-<br />
-
+------------------
 Please star the repo if you find it helpful :blush:
+---------------------
